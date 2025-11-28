@@ -21,7 +21,7 @@ mvn javafx:run
 
 ## Packaging
 
-Packaging is a work-in-progress, an Arch Linux package can be built with 
+Packaging is a work-in-progress, an Arch Linux package can be built with: 
 ```bash
 mvn clean install -Ppackage-arch
 ```
