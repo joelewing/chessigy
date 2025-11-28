@@ -1,4 +1,6 @@
-<img width="512" height="512" alt="icon_512" src="https://github.com/user-attachments/assets/0c9d33bc-4100-443d-8cd9-d99efd989920" /> # Chessigy
+# Chessigy
+<img width="128" height="128" alt="icon_128" src="https://github.com/user-attachments/assets/cb21a2ca-6c17-43f2-ab19-e0f39f51d827" />
+
 
 A basic chess application built with JavaFX.
 
