@@ -33,3 +33,5 @@ Packaging is a work-in-progress, an Arch Linux package can be built with:
 ```bash
 mvn clean install -Ppackage-arch
 ```
+
+Chessigy uses the Horsey chess piece icons created by cham and michael1241.
