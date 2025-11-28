@@ -4,7 +4,8 @@
 
 A basic chess application built with JavaFX.
 
-<img width="1184" height="912" alt="image" src="https://github.com/user-attachments/assets/96264451-6a17-4828-aa5d-66b4b52e51ec" />
+<img width="1184" height="912" alt="image" src="https://github.com/user-attachments/assets/c03d4a22-d20b-4518-8e01-9d2038036c24" />
+
 
 ## Playing against the computer
 Chessigy supports the [Serendipity](https://github.com/xu-shawn/Serendipity) chess engine. Download the latest .jar file for Serendipity, and load it from Chessigy (Engine > Load Engine JAR...). Chessigy will remember the engine after you have loaded it for ths first time.
