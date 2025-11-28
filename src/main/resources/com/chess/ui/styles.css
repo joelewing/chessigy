@@ -1,0 +1,349 @@
+/* Main styles for Chessigy */
+.root {
+    -fx-background-color: #ffffff;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-bar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0px;
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5px 10px;
+}
+
+.menu-button:hover,
+.menu-button:showing,
+.menu-button:focused {
+    -fx-background-color: #e5e5e5;
+}
+
+.menu-item {
+    -fx-padding: 5px 10px;
+}
+
+.menu-item:focused {
+    -fx-background-color: #e5e5e5;
+}
+
+.context-menu {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 2, 2);
+}
+
+.button {
+    -fx-background-color: #EFEFEF;
+    -fx-text-fill: #757575;
+    -fx-background-radius: 3px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.button:pressed {
+    -fx-background-color: #d0d0d0;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+}
+
+/* Dialog Styles */
+.new-game-dialog>.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0;
+}
+
+.new-game-dialog>.dialog-pane>.header-panel {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 0 0 1 0;
+}
+
+.new-game-dialog>.dialog-pane>.button-bar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 1 0 0 0;
+}
+
+.new-game-dialog .button {
+    -fx-padding: 8px 16px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 3px;
+    -fx-border-color: #B3B3B3;
+}
+
+.new-game-dialog .button:hover {
+    -fx-border-color: #B3B3B3;
+}
+
+/* Flat ComboBox */
+.flat-combo {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 2px 5px;
+}
+
+.flat-combo:hover {
+    -fx-border-color: #999999;
+}
+
+.flat-combo:focused {
+    -fx-border-color: #4a90e2;
+    -fx-background-color: #ffffff;
+}
+
+.flat-combo .list-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-padding: 5px;
+}
+
+
+.flat-combo .list-cell:filled:hover {
+    -fx-background-color: #e5e5e5;
+    -fx-text-fill: #000000;
+}
+
+.flat-combo .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.flat-combo .arrow {
+    -fx-background-color: #666666;
+    -fx-padding: 3px;
+}
+
+/* Flat Spinner */
+.flat-spinner {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+.flat-spinner:focused {
+    -fx-border-color: #4a90e2;
+}
+
+.flat-spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+}
+
+.flat-spinner .increment-arrow-button,
+.flat-spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+}
+
+.flat-spinner .increment-arrow-button:hover,
+.flat-spinner .decrement-arrow-button:hover {
+    -fx-background-color: #e5e5e5;
+}
+
+.flat-spinner .increment-arrow,
+.flat-spinner .decrement-arrow {
+    -fx-background-color: #666666;
+}
+
+/* Flat CheckBox (Toggle Switch style could be complex, sticking to clean checkbox) */
+.flat-checkbox .box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+}
+
+.flat-checkbox:selected .box {
+    -fx-background-color: #4a90e2;
+    -fx-border-color: #4a90e2;
+}
+
+.flat-checkbox:selected .mark {
+    -fx-background-color: #ffffff;
+}
+
+/* Separator */
+.separator .line {
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* Primary Button (Start) */
+.new-game-dialog .start-button {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #357abd;
+}
+
+.new-game-dialog .start-button:hover {
+    -fx-background-color: #357abd;
+    -fx-border-color: #2a629c;
+}
+
+/* Board Styles */
+.board-square {
+    -fx-background-color: transparent;
+    -fx-fill: transparent;
+}
+
+.board-square.light {
+    -fx-background-color: #ffffff;
+    -fx-fill: #ffffff;
+}
+
+.board-square.dark {
+    -fx-background-color: #C0C0C0;
+    -fx-fill: #C0C0C0;
+}
+
+.board-square.selected {
+    -fx-background-color: #ADD8E6;
+    -fx-fill: #ADD8E6;
+}
+
+.board-square.highlight-move-source {
+    -fx-background-color: #C3DDA6;
+    -fx-fill: #C3DDA6;
+}
+
+.board-square.highlight-move-target {
+    -fx-background-color: #A5BB8C;
+    -fx-fill: #A5BB8C;
+}
+
+.board-square.legal-move-target-light {
+    -fx-background-color: #E0E0FF;
+    -fx-fill: #E0E0FF;
+}
+
+.board-square.legal-move-target-dark {
+    -fx-background-color: #BFBFD9;
+    -fx-fill: #BFBFD9;
+}
+
+/* History ScrollBar Styles */
+.history-scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.history-scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 4px;
+}
+
+.history-scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #b3b3b3;
+}
+
+.history-scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.history-scroll-pane .scroll-bar:vertical .increment-button,
+.history-scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-pref-height: 0;
+    -fx-padding: 0;
+    -fx-opacity: 0;
+}
+
+/* Dialog Styles - Scoped */
+.new-game-dialog>.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-padding: 0;
+}
+
+.new-game-dialog>.dialog-pane>.header-panel {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e5e5e5;
+    -fx-border-width: 0 0 1 0;
+}
+
+.new-game-dialog>.dialog-pane>.button-bar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #e5e5e5;
+}
+
+.new-game-dialog .label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+}
+
+/* Scoped Button Styles for Dialog */
+.new-game-dialog .button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #333333;
+    -fx-font-weight: normal;
+    -fx-background-radius: 3px;
+    -fx-padding: 8px 16px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.new-game-dialog .button:hover {
+    -fx-background-color: #e5e5e5;
+    -fx-border-color: #B3B3B3;
+}
+
+.new-game-dialog .button:pressed {
+    -fx-background-color: #d0d0d0;
+}
+
+/* Clock Styles */
+.clock-container {
+    -fx-background-color: #F9F9F9;
+    -fx-border-radius: 3px;
+    -fx-padding: 10px;
+}
+
+.clock-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.white-clock-label {
+    -fx-text-fill: #333333;
+    -fx-background-color: #FFFFFF;
+}
+
+.black-clock-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #333333;
+}
+
+.current-move {
+    -fx-background-color: #D9D9D9;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 3px;
+    -fx-padding: 2px 5px;
+    -fx-font-weight: bold;
+}
