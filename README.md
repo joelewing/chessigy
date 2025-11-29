@@ -29,7 +29,11 @@ mvn javafx:run
 
 ## Packaging
 
-Packaging is a work-in-progress, an Arch Linux package can be built with: 
+Packaging is a work-in-progress, a Windows installer package can be built with (requires WiX toolset): 
+```bash
+mvn clean install -Ppackage-win
+```
+And an Arch Linux package can be built with:
 ```bash
 mvn clean install -Ppackage-arch
 ```
