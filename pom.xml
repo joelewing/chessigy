@@ -45,6 +45,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+    
             <version>5.10.0</version>
             <scope>test</scope>
         </dependency>
@@ -201,7 +202,7 @@
                                 <configuration>
                                     <executable>jlink</executable>
                                     <arguments>
-                                        <argument>--module-path=${java.home}/lib/jmods:${project.build.directory}/javafx-jmods/javafx-jmods-${javafx.version}</argument>
+                                        <argument>--module-path=${java.home}/lib/jmods;${project.build.directory}/javafx-jmods/javafx-jmods-${javafx.version}</argument>
                                         <argument>--add-modules=java.base,${javafx.modules}</argument>
                                         <argument>--strip-debug</argument>
                                         <argument>--no-header-files</argument>
