@@ -14,8 +14,6 @@
         <maven.compiler.target>17</maven.compiler.target>
         <javafx.version>17.0.2</javafx.version>
         <javafx.modules>javafx.controls,javafx.fxml</javafx.modules>
-        <javafx.platform>linux</javafx.platform>
-        <javafx.jmods.platform>linux-x64</javafx.jmods.platform>
     </properties>
 
     <dependencies>
@@ -120,6 +118,43 @@
     </build>
 
     <profiles>
+        <profile>
+            <id>os-linux</id>
+            <activation>
+                <os>
+                    <family>unix</family>
+                    <name>!mac os x</name>
+                </os>
+            </activation>
+            <properties>
+                <javafx.platform>linux</javafx.platform>
+                <javafx.jmods.platform>linux-x64</javafx.jmods.platform>
+            </properties>
+        </profile>
+        <profile>
+            <id>os-mac</id>
+            <activation>
+                <os>
+                    <family>mac</family>
+                </os>
+            </activation>
+            <properties>
+                <javafx.platform>mac</javafx.platform>
+                <javafx.jmods.platform>mac-x64</javafx.jmods.platform>
+            </properties>
+        </profile>
+        <profile>
+            <id>os-windows</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <properties>
+                <javafx.platform>win</javafx.platform>
+                <javafx.jmods.platform>windows-x64</javafx.jmods.platform>
+            </properties>
+        </profile>
         <profile>
             <id>package-win</id>
             <properties>
